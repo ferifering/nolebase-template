@@ -8,7 +8,7 @@ titleTemplate: 极致源于梦想，追求源于热爱
 hero:
   name: 知识库
   text: 极致源于梦想，追求源于热爱
-  tagline: 作者很懒什么都没有说
+  tagline: 作者很懒什么都不想说QAQ
   image:
     src: /logo.svg
     alt: Vitest

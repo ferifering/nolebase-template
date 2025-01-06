@@ -24,7 +24,7 @@ export const creators: Creator[] = [
     avatar: '',
     username: 'ferifering',
     title: '在写笔记喵',
-    desc: '开发者，后端开发',
+    desc: '后端开发者喵',
     links: [
       { type: 'github', icon: 'github', link: 'https://github.com/ferifering' },
     ],
