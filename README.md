@@ -32,7 +32,6 @@ vercel 部署很简单, 在 vercel 中选择项目后, 修改构建的 output di
 
 在 github仓库页面 -> Actions -> netlify 对应 workflow -> 右上角3个点 -> disable workflow
 
-<img width="204" alt="image" src="https://github.com/Jackiexiao/nolebase-template/assets/18050469/aa83c0f4-9ff6-4fc2-b5df-eb45f81f6773">
 
 ### 其他方式部署
 其他部署方式见[原仓库](https://github.com/nolebase/nolebase/)的说明
@@ -44,7 +43,7 @@ vercel 部署很简单, 在 vercel 中选择项目后, 修改构建的 output di
 解决方法： 推荐的  Obsidian Setting => Files and links 设置如下
 - New link format => Relative path to file
 -  Use `[[Wikilinks]]` => False
-- Default location for new attachments => In subfolder under current folder 
+- Default location for new attachments => In subfolder under current folder
 -  Subfolder name => assets
 
 这么做有几个好处
@@ -63,7 +62,7 @@ giscus 利用了 [GitHub Discussions](https://docs.github.com/en/discussions) 
 - 第2步，在 `./vitepress/theme/index.ts` 中修改 giscus 相关配置，在该文件中搜索 `giscusTalk`, 参考说明，修改配置即可
 
 ## 其他替代方案
-- obsidian 官方的 publish 
+- obsidian 官方的 publish
 - https://github.com/oleeskild/obsidian-digital-garden
 - https://github.com/ObsidianPublisher/obsidian-github-publisher
 - https://github.com/alangrainger/share-note
