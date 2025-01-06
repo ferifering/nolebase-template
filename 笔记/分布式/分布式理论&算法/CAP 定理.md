@@ -56,13 +56,13 @@ CAP 定理（CAP Theorem）是由计算机科学家 Eric Brewer 在 2000 年提�
 
 综上，分布式肯定要保证`P`，无法保证`P`的分布式组件，只能被称为“部署在多个节点上的单体系统”，为此，对于`CAP`那幅图，正确的画法应该是这样的：
 
-![CP与AP](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9e162f0ea7a544c5b274fb2a14c9f632~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1017&h=759&s=112094&e=png&b=fdfdfd)
+![](http://yj-dis.top/20250106222221.png)
 
 虽然很多人在聊`CAP`时，说到三选二，可是分布式系统中，实际只能在`A、C`里选，不存在`CA`这个组合！ 好了，回过头，再来看为什么`CAP`不能一起实现呢？
 
 分布式系统中的通信离不开网络，而恰恰网络出现故障是常事，在出现分区问题时，节点间的通信会受到严重阻碍，来看个例子：
 
-![分布式系统](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ee4e8166d9ae491393b064f4564e870e~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=818&h=694&s=50972&e=png&b=fdfcfc)
+![](http://yj-dis.top/20250106222242.png)
 
 如上图所示，该系统由`A、B、C`三个节点组成，其中由于`C`节点故障导致分区问题出现。如果要完全满足`CAP`里的一致性要求，意味着当外部写入数据时，`A`节点必须等到`C`节点同步完成，才能给客户端返回写入成功，可此时`C`节点已经挂了，注定着数据写不进去……
 
